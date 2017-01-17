@@ -45,9 +45,10 @@ static ssize_t device_read(struct file *filp,	/* see include/linux/fs.h   */
 			   size_t length,	/* length of the buffer     */
 			   loff_t * offset)
 {
-    put_user('b', buffer++);
+    put_user('9', buffer++);
+    put_user('H', buffer++);
 
-    return 1;
+    return 2;
 }
 
 /*
